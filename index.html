@@ -10,11 +10,32 @@
 		
 		<title> EDM2016 | Event Data Management </title>
 		
-		<link rel="shortcut icon" type="image/x-icon" href="fav.ico">
+		<link href="images/fav.ico" rel="shortcut icon" type="image/x-icon">
+			<!-- define a relational framework for navigation
+				can occur only in the head element; however, there can be multiple occurrences of <link>
+				attributes: 
+				href - specifies the URL of the linked resource
+				rel - names a relationship of the linked document to the current document,
+					most common use set to stylesheet
+				type - define the type of the content linked to, 
+					text/html, text/css-->
+		
+		<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 900px)">
+				
 		<meta name="viewport" content="width=device-width,initial scale=1">
+			<!-- If name is set, applying to the whole page
+				attributes: 
+				name - defines the name of document-level metadata
+					viewport: This pragma is used by several mobile devices only.
+				content - gives the value associated with the name
+					width: defines the width, in pixels, of the viewport
+					initial scale: defines the ratio between the device width (device-width in portrait mode or device-height in landscape mode) and the viewport size-->
 	    
 		<style type="text/css">
             *{margin: 0;}
+				/*sets the margin for all four sides,
+				top | right | bottom | left */
+				
 			*{font-family:"Gesta";}
 			
 			body{background-color:#696b72;
@@ -30,12 +51,11 @@
 				   color:white;
 				   cursor:pointer;
 				   font-family:Arial;
-				   font-size:16px;
+				   font-size:100%;
 				   padding:12px 24px;
 						/*sets the padding space up to the border: width, length */		
 				   position:relative;
 				   margin:350px; 
-						/* sets the space around the element on all sides */
 				   text-align:center;
 				   text-decoration:none;
 				   top: 2px;
@@ -77,7 +97,7 @@
 			.sectThree{background-image:url("images/monitors.jpg");}
 				
 			.subSect{height: 50%;
-				     background-color:#EEEEE0;}
+				     background-color:#BFB6B4;}
 				
 			.top-header{width=100%;
 				        max-width=960px;
