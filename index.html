@@ -10,6 +10,10 @@
 		
 		<title> EDM2016 | Event Data Management </title>
 		
+		<base href="https://smstaneva.github.io/EventDM/">
+			<!-- specifies the URL to use for all URLs
+				can be only one <base> element-->
+		
 		<link href="images/fav.ico" rel="shortcut icon" type="image/x-icon">
 			<!-- define a relational framework for navigation
 				can occur only in the head element; however, there can be multiple occurrences of <link>
@@ -21,17 +25,11 @@
 					text/html, text/css-->
 		
 		<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 900px)">
-				
-		<meta name="viewport" content="width=device-width,initial scale=1">
-			<!-- If name is set, applying to the whole page
-				attributes: 
-				name - defines the name of document-level metadata
-					viewport: This pragma is used by several mobile devices only.
-				content - gives the value associated with the name
-					width: defines the width, in pixels, of the viewport
-					initial scale: defines the ratio between the device width (device-width in portrait mode or device-height in landscape mode) and the viewport size-->
-	    
+		
 		<style type="text/css">
+			<!-- attributes:
+					type - defines the styling language-->
+					
             *{margin: 0;}
 				/*sets the margin for all four sides,
 				top | right | bottom | left */
@@ -101,28 +99,39 @@
 				     background-color:#BFB6B4;}
 				
 			.top-header{width=100%;
-				        max-width=960px;
-				        font-size:47.1px;
-				        font-style:italic;
-				        font-family:Gesta;
-				        text-align:center;
-				        position:relative;
-				        top:250px;}    
+						max-width=960px;
+						font-size:47.1px;
+						font-style:italic;
+						font-family:Gesta;
+						text-align:center;
+						position:relative;
+						top:250px;}    
 		 </style>
+				
+		<meta name="viewport" content="width=device-width,initial scale=1">
+			<!-- If name is set, applying to the whole page
+				attributes: 
+				name - defines the name of document-level metadata
+					viewport: This pragma is used by several mobile devices only.
+				content - gives the value associated with the name
+					width: defines the width, in pixels, of the viewport
+					initial scale: defines the ratio between the device width (device-width in portrait mode or device-height in landscape mode) and the viewport size-->
+	    
+		
     </head>
 
 	<body>
 		<!-- content elements organized in blocks
 			only one <body> element in a document-->
 		<nav>
-			<a href="https://smstaneva.github.io/EventDM/schedule.html">SCHEDULE AT A GLANCE</a>
-			<a href="#">HOME2</a>
+			<a href="schedule">SCHEDULE AT A GLANCE</a>
+			<a href="#">FLOOR PLAN</a>
 			<a href="#">HOME3</a>
 			<a href="#">HOME4</a>
 			<a href="#">HOME5</a>
 			<a href="#">HOME6</a>
-		</nav>
-	 
+		</nav>		
+		
 		<div class="sect sectOne">
 			<h1 class="top-header"> EVENT DATA MANAGEMENT</h1>
 			<h2>"2,500 YEARS OF APPLIED SCIENCE ADVENTURE"</h2>
@@ -133,6 +142,7 @@
 		<div class="sect sectTwo"></div>
 		<div class="subSect"></div>
 		<div class="sect sectThree"></div>
+		
 		<div><a href="#EVENT PROFILE">FOOTER1 </a> | <a href="#KEY"> FOOTER2</a> | <a href="#CONTACTS">FOOTER3</a> | <a href="#ATTENDEE">FOOTER4</a> </div></br>
 	</body>
  </html>

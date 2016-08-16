@@ -6,10 +6,12 @@
 		<link rel="shortcut icon" type="image/x-icon" href="images/fav.ico"> 
 			<!-- places the favicon in the head -->
 			
-		<meta name="viewport" content="width=device-width, initial scale=1">
-			<!-- makes the page responsive -->
-		
 		<style type="text/css">
+			h1 {text-align:center;
+				color:white;
+                font-weight:bold;
+                }
+				
 			*{margin: 0;} 
 			*{font-family:"Gesta";}
 			
@@ -32,30 +34,30 @@
 				  color:white;
 				  margin:30px;
 				  line-height:50px;}     
-					/*positions the text in the navbar half the height*/
 			
+			.parent{border: 5px solid lightcoral;
+					display:flex;
+					}                /*sets flex display*/
 			
-			.parOne{height:194.56px;
-					width: 145.92px;	
-					border: 25px transparent;
-					padding: 25px;
-					margin: 25px;
-					background-color:#bfb6b4;
+				.parOne{height:50px;              /*sets element box height within the flexbox*/				
+					margin:5px;                   /*sets the margin of the element box, i.e. the distance from the text to the flexbox border and between the element boxes*/
+					background:DeepSkyBlue;       /*sets the color of the element box*/
+					color:white;                  /*sets the font color of the element box*/
+					text-align:center;            /*aligns the element text within the element box*/      
+					line-height:50px;             /*sets the vertical position of the text within the element box*/
+					font-weight:600;              /* sets the text to bold*/
+					}                  
+										
+				.parTwo{height:194.56px;              			
+					margin:5px;                   
+					background:DeepSkyBlue;       
+					color:white;                  
+					text-align:center;                
+					line-height:50px;             
+					font-weight:600;              
 					}
 					
-			.parTwo{height:194.56px;
-					width: 145.92px;	
-					border: 25px solid green;
-					padding: 25px;
-					margin: 25px;
-					display:inline;}
-					
-			.parThree{height:194.56px;
-					width: 145.92px;	
-					border: 25px solid green;
-					padding: 25px;
-					margin: 25px;
-					}
+				.parThree{}
 	
 			
 				
@@ -65,26 +67,31 @@
 				background-repeat: no-repeat;
 				background-attachment: fixed;}
 				
-				.sectOne{background-color:#f8f7f7;}    
+				.sectOne{background-color:#f8f7f7;}   
 				.sectTwo{background-color:#f2f0f0;}
 				.sectThree{background-color:#ebe9e8;}
 				
 				.subSect{
 				height: 50%;						/*sets the size inbetween the images to half*/
 				background-color:#bfb6b4;}
-h1 {color:white;
-                font-weight:bold;
-                text-align:center;
-                }
+
 			
 </style>
-		
+			
+		<meta name="viewport" content="width=device-width, initial scale=1">
+			<!-- makes the page responsive -->
+			
 	</head>
 
 	<body>
 		
 			<nav>
-			<a href="#">SCHEDULE AT A GLANCE</a>
+			<a href="schedule">SCHEDULE AT A GLANCE</a>
+			<a href="#">FLOOR PLAN</a>
+			<a href="#">HOME3</a>
+			<a href="#">HOME4</a>
+			<a href="#">HOME5</a>
+			<a href="#">HOME6</a>
 			
 		</nav>
 		
@@ -93,9 +100,12 @@ h1 {color:white;
 					<!-- six levels of document headings 
 				Do not use lower levels to decrease heading font size: use the CSS font-size
 				use <h1> once per section-->
-			<p class="parOne">PANEL 1</p>
-			<p class="parTwo">PANEL 2</p>
-			<p class="parThree">PANEL 3</p>
+			
+			<div class="parent">
+				<p class="parOne">PANEL 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				<p class="parTwo">PANEL 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				<p class="parThree">PANEL 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+			</div>
 			
 				
 			
