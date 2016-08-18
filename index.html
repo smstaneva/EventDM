@@ -28,49 +28,19 @@
 			<!-- attributes:
 					type - defines the styling language-->
 					
-            *{margin: 0;}
-				/*sets the margin for all four sides,
-				top, right, bottom, left */
-				
-			*{font-family:"Gesta";}
-			
-			body{background-color:#696b72;
-				  color:white;}
+            body{background-color:#696b72;
+			color:white;}
 				
 			div{width:auto;
 				text-align:center;}
 				
-			.ghost{background:rgba(0,0,0,.5);
-				   border:1px solid black; 
-						/* sets the borders parameters: thickness, type, color */
-				   border-radius:5px;
-				   color:white;
-				   cursor:pointer;
-				   font-family:Arial;
-				   font-size:100%;
-				   padding:12px 24px;
-						/*sets the padding space up to the border: width, length */		
-				   position:relative;
-				   margin:350px; 
-				   text-align:center;
-				   text-decoration:none;
-				   top: 2px;
-						/*simulates a real-life button being pushed */
-				   -webkit-transition:color 0.3s ease-out,background-color 0.3s ease-out;}
-				
-			.ghost:hover{background:#6F8A00;
-				         background-color:transparent;}
-				
-			h2{position:relative; 
-				/* positions the element where it would normally appear */
-			   top:270px;
-					/*moves the element from the top of the page */
-			   font-size:150%;
-			   font-style:italic;
-			   font-weight:normal;}
-				
-			html, body{height: 100%;}
-				
+			h2{position: relative;        /* positions the element where it would normally appear */            
+				top:270px;                /*moves the element from the top of the page */				
+				font-size:150%;
+				font-style:italic;
+				font-weight:normal;
+				color:white;}
+
 			nav{position:fixed;
 				width:100%;
 				height:50px;
@@ -81,8 +51,31 @@
 			nav a{text-decoration:none;
 				  color:white;
 				  margin:30px;
-				  line-height:50px;}     
-					/*positions the text in the navbar half the height*/
+				  line-height:50px;}     /*positions the text in the navbar half the height*/
+				
+			.ghost{background:rgba(0,0,0,.5);
+				   border:1px solid black;        /* sets the borders parameters: thickness, type, color */		
+				   border-radius:5px;
+				   color:white;
+				   cursor:pointer;
+				   font-family:Arial;
+				   font-size:100%;
+				   padding:12px 24px;             /*sets the padding space up to the border: width, length */						
+				   position:relative;
+				   margin:350px; 
+				   text-align:center;
+				   text-decoration:none;
+				   top: 2px;						/*simulates a real-life button being pushed */				
+				   -webkit-transition:color 0.3s ease-out,background-color 0.3s ease-out;}
+				
+			.ghost:hover{background:#6F8A00;
+				         background-color:transparent;}
+			
+			html, body{height: 100%;}
+			
+			*{margin: 0;}                 /*sets the margin for all four sides: top, right, bottom, left; comparison!*/
+			*{font-family:"Gesta";}
+		
 				
 			.sect{height: 100%;
 				  background-size:cover;
@@ -95,7 +88,7 @@
 				
 			.subSect{height: 50%;
 				     background-color:#BFB6B4;}
-				
+								
 			.top-header{width=100%;
 						max-width=960px;
 						font-size:47.1px;
@@ -103,7 +96,8 @@
 						font-family:Gesta;
 						text-align:center;
 						position:relative;
-						top:250px;}    
+						top:250px;
+						color:white;}					
 		 </style>
 				
 		<meta name="viewport" content="width=device-width,initial scale=1">
@@ -145,6 +139,6 @@
 		<div class="subSect"></div>
 		<div class="sect sectThree"></div>
 		
-		<div><a href="#EVENT PROFILE">FOOTER1 </a> | <a href="#KEY"> FOOTER2</a> | <a href="#CONTACTS">FOOTER3</a> | <a href="#ATTENDEE">FOOTER4</a> </div></br>
+		<div><a href="#EVENT PROFILE">FOOTER1 </a> | <a href="#KEY"> FOOTER2</a> | <a href="#CONTACTS">FOOTER3</a> | <a href="#ATTENDEE">FOOTER4</a></div></br>
 	</body>
  </html>
