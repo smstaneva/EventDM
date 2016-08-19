@@ -4,13 +4,9 @@
 		<title> Schedule At-A-Glance </title>
 		
 		<link rel="shortcut icon" type="image/x-icon" href="images/fav.ico"> 
-			<!-- places the favicon in the head -->
 			
 		<style type="text/css">
-			h1 {text-align:center;
-				color:white;
-                font-weight:bold;
-                }
+			
 				
 			*{margin: 0;} 
 			*{font-family:"Gesta";}
@@ -18,14 +14,21 @@
 			body{background-color:#696b72;
 				color:#020a40;}                         /*sets the font color of the body*/
 				
-			div{width:auto;
-				text-align:center;}
+			div{width:auto;                             /*h1,p, div are block elements*, can be center-aligned by setting margin-left and margin-right to auto*/
+				text-align:center;}						/*div groups related items together*/
 			
+		
 			html, body{height: 100%;} /*sets the 3 sections size*/
+			
+			h1{padding-top:100px;
+			color:#686c8c;
+			font-size:28px;
+			text-align:left;
+			font-weight:normal;}
 			
 			nav{position:fixed;
 				width:100%;
-				height:50px;
+				height:50px;                              /*if the height of the element and the line-height are same size, the text gets centered vertically*/
 				background-color:rgba(191,182,180,.5);
 				z-index:99;
 				text-align:center;}
@@ -35,34 +38,30 @@
 				  margin:30px;
 				  line-height:50px;}     
 			
-			.parent{border: 5px solid lightcoral;
-					display:flex;
-					}                /*sets flex display*/
-			
-				.parOne{height:50px;              /*sets element box height within the flexbox*/				
-					margin:5px;                   /*sets the margin of the element box, i.e. the distance from the text to the flexbox border and between the element boxes*/
-					background:DeepSkyBlue;       /*sets the color of the element box*/
-					color:white;                  /*sets the font color of the element box*/
-					text-align:center;            /*aligns the element text within the element box*/      
-					line-height:50px;             /*sets the vertical position of the text within the element box*/
-					font-weight:600;              /* sets the text to bold*/
-					}                  
-										
-				.parTwo{height:194.56px;              			
-					margin:5px;                   
-					background:DeepSkyBlue;       
-					color:white;                  
-					text-align:center;                
-					line-height:50px;             
-					font-weight:600;              
+			.parent{width:100%;
+					display: -webkit-box;       /*sets the elements into 3 columns within the container, support for chrome & safari*/
+					display: -moz-box;          /*support for firefox*/
+					display: -ms-flexbox;       /*support for internet explorer*/
+					display: flexbox;
+				    
 					}
 					
-				.parThree{}
-	
+			.parent > .column{margin:0 5;
+							  height: 480px;         /*sets column height*/
+							  background: gray;     /*sets the background of the container*/
+							  color: white;         /*sets font color of the elements*/
+							  -webkit-box-flex: 1;  /*sets the columns to max width*/
+							  -moz-box-flex: 1;
+							  -ms-flex: 1;
+							  box-flex: 1;
+							  
+							  border:2px solid #020A40}
 			
+			
+							  
 				
-						.sect{
-				height: 100%;						/*sets the height of all three main images to cover*/
+				
+			.sect{height: 100%;						/*sets the height of all three main images to cover*/
 				background-size:cover;                /*sets up the size of the image*/
 				background-repeat: no-repeat;
 				background-attachment: fixed;}
@@ -74,41 +73,46 @@
 				.subSect{
 				height: 50%;						/*sets the size inbetween the images to half*/
 				background-color:#bfb6b4;}
-
+				
 			
 </style>
-			
-		<meta name="viewport" content="width=device-width, initial scale=1">
-			<!-- makes the page responsive -->
-			
+
+<meta name="viewport" content="width=device-width, initial scale=1">
+				
 	</head>
 
 	<body>
 		
-			<nav>
-			<a href="schedule">SCHEDULE AT A GLANCE</a>
-			<a href="#">FLOOR PLAN</a>
-			<a href="#">HOME3</a>
-			<a href="#">HOME4</a>
-			<a href="#">HOME5</a>
-			<a href="#">HOME6</a>
+		<nav>
+			<a href="schedule">HOME</a>
+			<a href="floor_plan">FLOOR PLAN</a>
+			<a href="bangkok_hotels">BANGKOK HOTELS</a>
+			<a href="networking">NETWORKING</a>
+			<a href="interesting_facts">INTERESTING FACTS</a>
+			<a href="contact_us">CONTACT US</a>
 			
 		</nav>
 		
 		<div class="sect sectOne">
-			<h1> Schedule At-A-Glance </h1>
-					<!-- six levels of document headings 
-				Do not use lower levels to decrease heading font size: use the CSS font-size
-				use <h1> once per section-->
-			
+			<h1>Project Management Track</h1>
 			<div class="parent">
-				<p class="parOne">PANEL 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-				<p class="parTwo">PANEL 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-				<p class="parThree">PANEL 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-			</div>
-			
+				<div class="column"
+					<p class="parOne">PANEL 1 - Baseline Project Plan</p>
+				</div>
 				
-			
+				<div class="column">
+					<p class="parTwo">PANEL 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p class="parThree">PANEL 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+					<p class="parTwo">PANEL 4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				</div>
+				
+				<div class="column">
+					<p class="parTwo">PANEL 5 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p class="parTwo">PANEL 6 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p class="parTwo">PANEL 7 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p class="parTwo">PANEL 8 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				</div>
+			</div>			
 		</div>
 	
 		<div class="subSect">This is a portfolio website. </div>
