@@ -10,81 +10,77 @@
 				
 			*{margin: 0;} 
 			*{font-family:"Gesta";}
-			
 			*{box-sizing: border-box;}
+			
+			html, body{height: 100%;} /*sets the 3 sections size*/
 			
 			body{background-color:#696b72;
 				color:#020a40;}                     
-				
-			main,div{width:auto;                             /*h1,p, div are block elements*, can be center-aligned by setting margin-left and margin-right to auto*/
-										/*div groups related items together*/
-				display:flex;
-				padding:1rem;}
 		
-			html, body{height: 100%;} /*sets the 3 sections size*/
-			
-			h1{color:#686c8c;}
-			padding-top:100px;
-			font-size:28px;
-			text-align:left;
-			font-weight:normal;}
-			
-			nav{width:100%;
-				background-color:rgba(191,182,180,.5);
+			nav{background-color:rgba(191,182,180,.5);
+				width:100%;
 				position:fixed;
-				height:50px;                              /*if the height of the element and the line-height are same size, the text gets centered vertically*/
+				height:50px;                              /*if the height of the element equals line-height, the text gets centered vertically*/
 				z-index:99;
 				text-align:center;}
 				
-			nav a{color:white;
+			nav a{color:white;                               /*cannot have one <a> inside another <a>*/
 				  text-decoration:none;
 				  margin:30px;
-				  line-height:50px;}     
+				  line-height:50px;}
 			
-			.container{display: flex;
-					   <!-- default inline;
-						inline-list-item, flex, inline-flex, grid, inline-grid, run-in or contents-->
+			h1{color:#686c8c;
+				padding-top:50px;
+				font-size:28px;
+				text-align:left;}
+				
+			
+			
+			 main,div{width:auto;                             /*h1,p, div are block elements*, can be center-aligned by setting margin-left and margin-right to auto*/
+										/*div groups related items together*/
+					padding-top:4rem;
+					padding-right:1rem;
+					padding-left:1rem;}    
+					
+					.sect{height: 100%;						/*sets the height of all three main images to cover*/
+						background-size:cover;                /*sets up the size of the image*/
+						background-repeat: no-repeat;
+						background-attachment: fixed;}
+				
+					.sectOne{background-color:#f8f7f7;}   
+					.sectTwo{background-color:#f2f0f0;}
+					.sectThree{background-color:#ebe9e8;}
+
+					.subSect{background-color:#bfb6b4;
+						height: 50%;}						/*sets the size inbetween the images to half*/
+					
+					.container{background-color: yellow;    /*for testing purposes only*/  
+								display: flex;
+							<!-- default inline;
+								inline-list-item, flex, inline-flex, grid, inline-grid, run-in or contents-->
 						
-						display: -webkit-box;       /*sets the elements into 3 columns within the container, support for chrome & safari*/
-						display: -moz-box;          /*support for firefox*/
-						display: -ms-flexbox;       /*support for internet explorer*/
+								display: -webkit-box;       /*sets the elements into 3 columns within the container, support for chrome & safari*/
+								display: -moz-box;          /*support for firefox*/
+								display: -ms-flexbox;       /*support for internet explorer*/
+								width:100%; 
+								flex-wrap:wrap;
+								margin:auto;} 
 					
-					 width:100%; 
-					flex-wrap:wrap;
-					margin:auto;}
-					
-			.container > .column{background: gray;     /*sets the background of the container*/
-							    color: white;
-							    border:2px solid #020A40;
-								margin:0 5;
-							  height: 400px;         /*sets column height*/     
-							  -webkit-box-flex: 1;  /*sets the columns to max width*/
-							  -moz-box-flex: 1;
-							  -ms-flex: 1;
-							  box-flex: 1;
-							  -webkit-column-count:3;
-							  flex:1;}
-							  
-			
-			
-			p{background-color:mistyrose;
-			  border:2px solid #02040a;}	
-				
-			.sect{height: 100%;						/*sets the height of all three main images to cover*/
-				background-size:cover;                /*sets up the size of the image*/
-				background-repeat: no-repeat;
-				background-attachment: fixed;}
-				
-				.sectOne{background-color:#f8f7f7;}   
-				.sectTwo{background-color:#f2f0f0;}
-				.sectThree{background-color:#ebe9e8;}
-				
-				.subSect{background-color:#bfb6b4;
-				
-						height: 50%;						/*sets the size inbetween the images to half*/
-						}
-				
-			
+					.container > .column{background-color: #8c001a;   /*sets the background color of the element:column*/
+										color: white;
+											<!-- text color -->
+											
+									
+										margin:0 5;
+										height: 400px;             
+										-webkit-box-flex: 1;  /*sets the columns to max width*/
+										-moz-box-flex: 1;
+										-ms-flex: 1;
+										box-flex: 1;
+										
+										flex:1 0 200px;               /*makes the columns equal in length, & wraps the text inside, puts the columns on top of each other when sizing*/			
+										border:10px solid yellow;
+										}
 </style>
 
 <meta name="viewport" content="width=device-width, initial scale=1">
@@ -94,7 +90,7 @@
 	<body>
 		
 		<nav>
-			<a href="schedule">SCHEDULE AT A GLANCE</a>
+			<a href="schedule">SCHEDULE AT A GLANCE</a>             
 			<a href="floor_plan">FLOOR PLAN</a>
 			<a href="bangkok_hotels">BANGKOK HOTELS</a>
 			<a href="networking">NETWORKING</a>
@@ -102,8 +98,7 @@
 			<a href="contact_us">CONTACT US</a>
 			
 		</nav>
-		
-		
+	
 		<div class="sect sectOne">
 			<h1>Project Management Track</h1>
 			<div class="container">
@@ -112,7 +107,7 @@
 				</div>
 				
 				<div class="column">
-					<p class="parTwo">PANEL 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit PANEL 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elitPANEL 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elitPANEL 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elitPANEL 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elitPANEL 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p class="parTwo">PANEL 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit PANEL 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 					<p class="parThree">PANEL 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
 					<p class="parTwo">PANEL 4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 				</div>
