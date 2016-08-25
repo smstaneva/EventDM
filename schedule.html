@@ -34,6 +34,17 @@
 				font-size:28px;
 				text-align:left;}
 				
+			p{border: 2px solid black;
+			padding:20px;}
+			 
+			.element_title{font-size:20px;
+							color:#686c8c;} 
+			 
+			.big_element{font-size:32px;}
+			
+			.middle_element{font-size:24px;}
+			
+			.small_element{font-size:20px;}											}
 			
 			
 			 main,div{width:auto;                             /*h1,p, div are block elements*, can be center-aligned by setting margin-left and margin-right to auto*/
@@ -71,15 +82,16 @@
 											<!-- text color -->
 											
 									
-										margin:0 5;
+										
 										height: 400px;             
 										-webkit-box-flex: 1;  /*sets the columns to max width*/
 										-moz-box-flex: 1;
 										-ms-flex: 1;
 										box-flex: 1;
 										
+										
 										flex:1 0 200px;               /*makes the columns equal in length, & wraps the text inside, puts the columns on top of each other when sizing*/			
-										border:10px solid yellow;
+										border:2px solid yellow;
 										}
 </style>
 
@@ -102,21 +114,38 @@
 		<div class="sect sectOne">
 			<h1>Project Management Track</h1>
 			<div class="container">
-				<div class="column"
-					<p class="parOne">PANEL 1 - Baseline Project Plan</p>
+				<div class="column">
+					<p class="big_element">
+						<span class="element_title">PANEL 1</span></br>
+						Baseline Project Plan</p>
 				</div>
 				
 				<div class="column">
-					<p class="parTwo">PANEL 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit PANEL 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-					<p class="parThree">PANEL 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-					<p class="parTwo">PANEL 4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				
+					<p class="middle_element">
+						<span class="element_title">PANEL 2</span></br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p class="middle_element">
+						<span class="element_title">PANEL 3</span></br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+					<p class="middle_element">
+						<span class="element_title">PANEL 4</span></br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 				</div>
 				
 				<div class="column">
-					<p class="parTwo">PANEL 5 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-					<p class="parTwo">PANEL 6 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-					<p class="parTwo">PANEL 7 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-					<p class="parTwo">PANEL 8 - Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p class="small_element">
+						<span class="element_title">PANEL 5</span></br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p class="small_element">
+						<span class="element_title">PANEL 6</span></br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p class="small_element">
+						<span class="element_title">PANEL 7</span></br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<p class="small_element">
+						<span class="element_title">PANEL 8</span></br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 				</div>
 			</div>			
 		</div>
