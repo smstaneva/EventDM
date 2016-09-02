@@ -6,7 +6,7 @@
 		One <head> element, followed by one <body> element-->
 		
      <head>
-		<!-- <title>, <base>, <link>, <style>, <meta>, <script>, <noscript> element-->
+		<!-- <title>, <base>, <link>, <style>, <meta>, <script>, <noscript>-->
 		
 		<title> EDM2016 | Event Data Management </title>
 		
@@ -18,86 +18,108 @@
 			<!-- define a relational framework for navigation
 				can occur only in the head element; however, there can be multiple occurrences of <link>
 				attributes: 
-				href - specifies the URL of the linked resource
-				rel - names a relationship of the linked document to the current document,
-					most common use set to stylesheet
-				type - define the type of the content linked to, 
-					text/html, text/css-->
+					href - specifies the URL of the linked resource
+					rel - names a relationship of the linked document to the current document,
+						most common use set to stylesheet
+					type - define the type of the content linked to, 
+						text/html, text/css-->
 
-		<style type="text/css">
-			<!-- attributes:
-					type - defines the styling language-->
-					
-            body{background-color:#696b72;
-			color:white;}
-				
-			div{width:auto;
-				text-align:center;}
-				
-			h2{position: relative;        /* positions the element where it would normally appear */            
-				top:270px;                /*moves the element from the top of the page */				
-				font-size:150%;
-				font-style:italic;
-				font-weight:normal;
-				color:white;}
-
-			nav{position:fixed;
+		<style type="text/css"> 	
+		
+			
+			
+			html, body{height:100%;}
+			
+			body{background-color:#696b72;		  
+					color:white;}
+			
+			*{margin:0;}                
+			
+			nav{background-color:rgba(0,0,0,.5);
 				width:100%;
+				position:fixed;
 				height:50px;
-				background-color:rgba(0,0,0,.5);
 				z-index:99;
 				text-align:center;}
 				
-			nav a{text-decoration:none;
-				  color:white;
-				  margin:30px;
-				  line-height:50px;}     /*positions the text in the navbar half the height*/
-				
-			.ghost{background:rgba(0,0,0,.5);
-				   border:1px solid black;        /* sets the borders parameters: thickness, type, color */		
-				   border-radius:5px;
-				   color:white;
-				   cursor:pointer;
-				   font-family:Arial;
-				   font-size:100%;
-				   padding:12px 24px;             /*sets the padding space up to the border: width, length */						
-				   position:relative;
-				   margin:350px; 
-				   text-align:center;
-				   text-decoration:none;
-				   top: 2px;						/*simulates a real-life button being pushed */				
-				   -webkit-transition:color 0.3s ease-out,background-color 0.3s ease-out;}
-				
-			.ghost:hover{background:#6F8A00;
-				         background-color:transparent;}
+			nav a{line-height:50px;    
+				color:white;
+				text-decoration:none;
+				margin:30px;}         
 			
-			html, body{height: 100%;}
+			h1,h2{position:relative; 	 
+				font-style:italic;
+				text-align:center;
+				color-white;}
 			
-			*{margin: 0;}                 /*sets the margin for all four sides: top, right, bottom, left; comparison!*/
-			*{font-family:"Gesta";}
-		
-				
-			.sect{height: 100%;
-				  background-size:cover;
-				  background-repeat: no-repeat;
-				  background-attachment: fixed;}
-				
-			.sectOne{background-image:url("images/water.jpg");}
-			.sectTwo{background-image:url("images/math.jpg");}
-			.sectThree{background-image:url("images/monitors.jpg");}
-				
-			.subSect{height: 50%;
-				     background-color:#BFB6B4;}
+			h1{width=100%;
+				max-width=960px;
+				font-size:47.1px;
+				top:250px;}
 								
-			.top-header{width=100%;
-						max-width=960px;
-						font-size:47.1px;
-						font-style:italic;
-						font-family:Gesta;
-						text-align:center;
-						position:relative;
-						top:250px;
-						color:white;}					
+			h2{top:270px;                				
+				font-size:150%;}
+				
+			div{width:auto;
+				text-align:center;
+				}
+				
+			button{background:rgba(0,0,0,.5);
+						   color:white;
+						   border:1px solid black;        
+							border-radius:5px;
+							cursor:pointer;
+							font-size:100%;
+							padding:12px 24px;             						
+							position:relative;
+							margin-top:350px; 
+							text-align:center;
+							text-decoration:none;
+							top: 2px;										
+							-webkit-transition:color 0.3s ease-out,background-color 0.3s ease-out;}
+				
+			button:hover{background-color:transparent;
+						background:transparent;}
+				
+			footer{width:100%;
+					margin-bottom:30px;        
+					text-align:center;}		
+			
+					.sect{height:100%;								
+						background-size:cover;
+						background-repeat: no-repeat;
+						background-attachment: fixed;}
+				
+					.sectOne{background-image:url("images/water.jpg");}
+					.sectTwo{background-image:url("images/math.jpg");}
+					.sectThree{background-image:url("images/monitors.jpg");}
+				
+					.subsection{background-color:#bfb6b4;	
+							height: 50%;} 
+					 	
+					.view_port {background-color: black;	
+						height: 25px;
+						width: 100%;
+						overflow: hidden;}
+
+					.cylon_eye {background-color: red;
+						background-image: -webkit-linear-gradient(    left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+						background-image:    -moz-linear-gradient(    left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+						background-image:      -o-linear-gradient(    left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+						background-image:         linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+						color: white;
+						height: 100%;
+						width: 20%;
+						-webkit-animation: 4s linear 0s infinite alternate move_eye;
+						-moz-animation: 4s linear 0s infinite alternate move_eye;
+						-o-animation: 4s linear 0s infinite alternate move_eye;
+						animation: 4s linear 0s infinite alternate move_eye;}
+
+			@-webkit-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+			@-moz-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+			@-o-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+			@keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+			
 		 </style>
 				
 		<meta name="viewport" content="width=device-width,initial scale=1">
@@ -108,13 +130,16 @@
 				content - gives the value associated with the name
 					width: defines the width, in pixels, of the viewport
 					initial scale: defines the ratio between the device width (device-width in portrait mode or device-height in landscape mode) and the viewport size-->
-	    
-		
+	    	
     </head>
 
 	<body>
 		<!-- content elements organized in blocks
 			only one <body> element in a document-->
+		
+			<!-- HTML should be marked up using the most appropriate tags for the content.h1/p -->
+			<!-- Whenever you find yourself wanting to use a <span> or <div>, wonder if there is another, more meaningful tag allowed in HTML -->
+			<!-- It's possible to style most content on the page using only descendant selectors -->
 		<nav>
 			<a href="schedule">SCHEDULE AT A GLANCE</a>
 			<a href="floorplan">FLOOR PLAN</a>
@@ -125,20 +150,27 @@
 		</nav>		
 		
 		<div class="sect sectOne">
-			<h1 class="top-header"> EVENT DATA MANAGEMENT</h1>
+			<h1> EVENT DATA MANAGEMENT</h1>
 					<!-- six levels of document headings 
 				Do not use lower levels to decrease heading font size: use the CSS font-size
 				use <h1> once per section-->
 				
 			<h2>"2,500 YEARS OF APPLIED SCIENCE ADVENTURE"</h2>
-			<button class="ghost" href="index.html">Learn More</button>
+			<button href="index.html">Learn More</button>
 		</div>
 		
-		<div class="subSect">This is a portfolio website. </div>
+		<div class="sect subsection"> 
+			
+			<div class="view_port">
+				<div class="polling_message"> Work in Progress</div>
+				<div class="cylon_eye"></div>
+			</div>
+			
+		</div>
 		<div class="sect sectTwo"></div>
-		<div class="subSect"></div>
+		<div class="sect subsection"></div>
 		<div class="sect sectThree"></div>
 		
-		<div><a href="#EVENT PROFILE">FOOTER1 </a> | <a href="#KEY"> FOOTER2</a> | <a href="#CONTACTS">FOOTER3</a> | <a href="#ATTENDEE">FOOTER4</a></div></br>
+		<footer><a href="#FOOTER1">FOOTER1 </a> | <a href="#FOOTER2"> FOOTER2</a> | <a href="#FOOTER3">FOOTER3</a> | <a href="#FOOTER4">FOOTER4</a></footer>
 	</body>
  </html>
