@@ -7,15 +7,15 @@
 			
 		<style type="text/css">
 			
+			
 				
 			*{margin: 0;} 
-			*{font-family:"Gesta";}
+			
 			*{box-sizing: border-box;}
 			
 			html, body{height: 100%;} /*sets the 3 sections size*/
 			
-			body{background-color:#696b72;
-				color:#020a40;}                     
+			                    
 		
 			nav{background-color:rgba(191,182,180,.5);
 				width:100%;
@@ -29,31 +29,16 @@
 				  margin:30px;
 				  line-height:50px;}
 			
+			footer{width:100%;
+				margin-bottom:30px;
+				text-align:center;}
+				
 			h1{color:#686c8c;
 				padding-top:50px;
 				font-size:28px;
 				text-align:left;}
 				
-			p{border: 2px solid black;
-			padding:20px;}
-			 
-			.element_title{font-size:20px;
-							color:#686c8c;} 
-			 
-			.big_element{font-size:32px;}
-			
-			.middle_element{font-size:24px;}
-			
-			.small_element{font-size:20px;}											}
-			
-			
-			 main,div{width:auto;                             /*h1,p, div are block elements*, can be center-aligned by setting margin-left and margin-right to auto*/
-										/*div groups related items together*/
-					padding-top:4rem;
-					padding-right:1rem;
-					padding-left:1rem;}    
-					
-					.sect{height: 100%;						/*sets the height of all three main images to cover*/
+			.sect{height: 100%;						/*sets the height of all three main images to cover*/
 						background-size:cover;                /*sets up the size of the image*/
 						background-repeat: no-repeat;
 						background-attachment: fixed;}
@@ -62,8 +47,29 @@
 					.sectTwo{background-color:#f2f0f0;}
 					.sectThree{background-color:#ebe9e8;}
 
-					.subSect{background-color:#bfb6b4;
-						height: 50%;}						/*sets the size inbetween the images to half*/
+					.subsection{background-color:#bfb6b4;
+						height: 50%;}						/*sets the size inbetween the images to half*/	
+				
+			article{border: 2px solid black;
+			padding:20px;}
+			 
+			h3{font-size: 18px;
+				color:#686c8c;} 
+			 
+			.column1 p{font-size:32px;}
+			
+			.middle_element{font-size:24px;}
+			
+			.small_element{font-size:20px;}											
+			
+			
+			 main,div{width:auto;                             /*h1,p, div are block elements*, can be center-aligned by setting margin-left and margin-right to auto*/
+										/*div groups related items together*/
+					padding-top:4rem;
+					padding-right:1rem;
+					padding-left:1rem;}    
+					
+					
 					
 					.container{background-color: yellow;    /*for testing purposes only*/  
 								display: flex;
@@ -77,12 +83,10 @@
 								flex-wrap:wrap;
 								margin:auto;} 
 					
-					.container > .column{background-color: #8c001a;   /*sets the background color of the element:column*/
+					.container > .column{background-color: #8c001a;   /*sets the background color of the element:column; direct child selector*/
 										color: white;
 											<!-- text color -->
 											
-									
-										
 										height: 400px;             
 										-webkit-box-flex: 1;  /*sets the columns to max width*/
 										-moz-box-flex: 1;
@@ -91,8 +95,7 @@
 										
 										
 										flex:1 0 200px;               /*makes the columns equal in length, & wraps the text inside, puts the columns on top of each other when sizing*/			
-										border:2px solid yellow;
-										}
+										border:2px solid yellow;}
 </style>
 
 <meta name="viewport" content="width=device-width, initial scale=1">
@@ -112,47 +115,59 @@
 		</nav>
 	
 		<div class="sect sectOne">
-			<h1>Project Management Track</h1>
+			<h1>Project Management Track :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</h1>
+			
 			<div class="container">
 				<div class="column">
-					<p class="big_element">
-						<span class="element_title">PANEL 1</span></br>
-						Baseline Project Plan</p>
+					<article>
+						<h3>PANEL 1</h3>
+						<p>Baseline Project Plan</p>
+					</article>
 				</div>
 				
 				<div class="column">
-				
-					<p class="middle_element">
-						<span class="element_title">PANEL 2</span></br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-					<p class="middle_element">
-						<span class="element_title">PANEL 3</span></br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-					<p class="middle_element">
-						<span class="element_title">PANEL 4</span></br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<article>
+						<h3>ARTICLE 2</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					</article>
+					
+					<article>
+						<h3>ARTICLE 3</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+					</article>
+
+					<article>
+						<h3>ARTICLE 4</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					</article>
 				</div>
 				
 				<div class="column">
-					<p class="small_element">
-						<span class="element_title">PANEL 5</span></br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-					<p class="small_element">
-						<span class="element_title">PANEL 6</span></br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-					<p class="small_element">
-						<span class="element_title">PANEL 7</span></br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-					<p class="small_element">
-						<span class="element_title">PANEL 8</span></br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<article>
+						<h3>PANEL 5</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					</article>
+					<article>
+						<h3>PANEL 6</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					</article>
+					<article>
+						<h3>PANEL 7</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					</article>
+					<article>
+						<h3>PANEL 8</h3>
+						</p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					</article>
 				</div>
 			</div>			
 		</div>
 	
-		<div class="subSect">This is a portfolio website. </div>
+		<div class="subsection">This is a portfolio website. </div>
 		<div class="sect sectTwo"></div>
-		<div class="subSect"></div>
+		<div class="subsection"></div>
 		<div class="sect sectThree"></div>
+		
+		<footer><a href="#EVENT PROFILE">FOOTER1 </a> | <a href="#KEY"> FOOTER2</a> | <a href="#CONTACTS">FOOTER3</a> | <a href="#ATTENDEE">FOOTER4</a></footer>
 	</body>
 </html>
