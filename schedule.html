@@ -7,16 +7,12 @@
 			
 		<style type="text/css">
 			
-			
+			html, body{height: 100%;} /*sets the 3 sections size*/
 				
 			*{margin: 0;} 
 			
 			*{box-sizing: border-box;}
 			
-			html, body{height: 100%;} /*sets the 3 sections size*/
-			
-			                    
-		
 			nav{background-color:rgba(191,182,180,.5);
 				width:100%;
 				position:fixed;
@@ -51,16 +47,17 @@
 						height: 50%;}						/*sets the size inbetween the images to half*/	
 				
 			article{border: 2px solid black;
-			padding:20px;}
+			padding:20px;
+			background-color:mistyrose;}
 			 
 			h3{font-size: 18px;
 				color:#686c8c;} 
 			 
-			.column1 p{font-size:32px;}
+			.column1{font-size:32px;}
 			
-			.middle_element{font-size:24px;}
+			.column2{font-size:24px;}
 			
-			.small_element{font-size:20px;}											
+			.column3{font-size:20px;}											
 			
 			
 			 main,div{width:auto;                             /*h1,p, div are block elements*, can be center-aligned by setting margin-left and margin-right to auto*/
@@ -71,7 +68,7 @@
 					
 					
 					
-					.container{background-color: yellow;    /*for testing purposes only*/  
+					.container{border:1px solid black;    /*for testing purposes only*/  
 								display: flex;
 							<!-- default inline;
 								inline-list-item, flex, inline-flex, grid, inline-grid, run-in or contents-->
@@ -81,7 +78,7 @@
 								display: -ms-flexbox;       /*support for internet explorer*/
 								width:100%; 
 								flex-wrap:wrap;
-								margin:auto;} 
+								margin-auto;} 
 					
 					.container > .column{background-color: #8c001a;   /*sets the background color of the element:column; direct child selector*/
 										color: white;
@@ -94,8 +91,9 @@
 										box-flex: 1;
 										
 										
-										flex:1 0 200px;               /*makes the columns equal in length, & wraps the text inside, puts the columns on top of each other when sizing*/			
-										border:2px solid yellow;}
+										flex:1 0 200px;
+										border:1px solid black;             /*makes the columns equal in length, & wraps the text inside, puts the columns on top of each other when sizing*/			
+										}
 </style>
 
 <meta name="viewport" content="width=device-width, initial scale=1">
@@ -120,50 +118,49 @@
 			<div class="container">
 				<div class="column">
 					<article>
-						<h3>PANEL 1</h3>
-						<p>Baseline Project Plan</p>
+						<h3>ARTICLE 1</h3>
+						<p class="column1">Baseline Project Plan</p>
 					</article>
 				</div>
 				
 				<div class="column">
 					<article>
 						<h3>ARTICLE 2</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						<p class="column2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 					</article>
 					
 					<article>
 						<h3>ARTICLE 3</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+						<p class="column2">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
 					</article>
 
 					<article>
 						<h3>ARTICLE 4</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						<p class="column2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 					</article>
 				</div>
 				
 				<div class="column">
 					<article>
-						<h3>PANEL 5</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						<h3>ARTICLE 5</h3>
+						<p class="column3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 					</article>
 					<article>
-						<h3>PANEL 6</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						<h3>ARTICLE 6</h3>
+						<p class="column3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 					</article>
 					<article>
-						<h3>PANEL 7</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						<h3>ARTICLE 7</h3>
+						<p class="column3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 					</article>
 					<article>
-						<h3>PANEL 8</h3>
-						</p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						<h3>ARTICLE 8</h3>
+						</p class="column3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 					</article>
 				</div>
 			</div>			
-		</div>
 	
-		<div class="subsection">This is a portfolio website. </div>
+		<div class="subsection"></div>
 		<div class="sect sectTwo"></div>
 		<div class="subsection"></div>
 		<div class="sect sectThree"></div>
