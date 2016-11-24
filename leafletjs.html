@@ -1,0 +1,57 @@
+<!DOCUMENT html>
+<html>
+	<head>
+	
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+		
+		<style>
+		
+			#mapid { height: 550px; 
+					top:100px;}
+					
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<div id="mapid"></div>
+		<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+		
+		<script>
+	
+			var mymap = L.map('mapid').setView([26, -0.09], 2);
+	
+			googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
+				maxZoom: 20,
+				subdomains:['mt0','mt1','mt2','mt3']
+				}).addTo(mymap);
+
+			var circle = L.circle([51.508, -0.11], {
+				color: 'red',
+				fillColor: '#f03',
+				fillOpacity: 0.5,
+				radius: 500
+				}).addTo(mymap);
+
+			L.marker([51.5, -0.09]).addTo(mymap)
+				.bindPopup('London - UK <br> Easily customizable.')
+				.openPopup();
+				
+			var circle = L.circle([36.123, -115.175], {
+				color: 'red',
+				fillColor: '#f03',
+				fillOpacity: 0.5,
+				radius: 500
+				}).addTo(mymap);
+	
+			L.marker([36.115, -115.173]).addTo(mymap)
+				.bindPopup('Las Vegas, NV - USA<br> Easily customizable.')
+				.openPopup();
+				
+		</script>
+		
+	</body>
+</html>
