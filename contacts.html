@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Contacts </title>
+		
+		<link rel="shortcut icon" type="image/x-icon" href="images/fav.ico"> 
+			
+		<style>
+			h1 {text-align:center;
+				color:white;
+                font-weight:bold;}
+				
+			*{margin: 0;} 
+			*{font-family:"Gesta";}
+			
+			body{background-color:#696b72;
+				color:#020a40;}                        
+				
+			div{width:auto;
+				text-align:center;}
+			
+			html, body{height: 100%;} 
+			
+			nav{position:fixed;
+				width:100%;
+				height:50px;
+				background-color:rgba(4,40,90,.7);
+				z-index:99;
+				text-align:center;}
+				
+			nav a{text-decoration:none;
+				  color:white;
+				  margin:30px;
+				  line-height:50px;}
+	
+			.sect{height: 100%;					
+				background-size:cover;                
+				background-repeat: no-repeat;
+				background-attachment: fixed;}
+				
+				.sectOne{background-color:#f8f7f7;}   
+				.sectTwo{background-color:#f2f0f0;}
+				.sectThree{background-color:#ebe9e8;}
+				
+				.subSect{
+				height: 50%;						
+				background-color:#bfb6b4;}
+				
+				
+				
+					#mapid { height: 550px; 
+						top:100px;}
+			
+				
+			</style>
+
+			
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+			
+			
+</head>
+<body>
+	<nav>
+			<a href="schedule">SCHEDULE AT A GLANCE</a>
+			<a href="floorplan">FLOOR PLAN</a>
+			<a href="bangkok_hotels">BANGKOK HOTELS</a>
+			<a href="networking">NETWORKING</a>
+			<a href="interesting_facts">INTERESTING FACTS</a>
+			<a href="contact_us">CONTACTS</a>
+			
+		</nav>
+		
+		<div class="sect sectOne">
+		
+		
+
+	<div id="mapid"></div>
+		<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+		
+		<script>
+	
+			var mymap = L.map('mapid').setView([26, -0.09], 2);
+	
+			googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
+				maxZoom: 20,
+				subdomains:['mt0','mt1','mt2','mt3']
+				}).addTo(mymap);
+
+			var circle = L.circle([51.508, -0.11], {
+				color: 'red',
+				fillColor: '#f03',
+				fillOpacity: 0.5,
+				radius: 500
+				}).addTo(mymap);
+
+			L.marker([51.5, -0.09]).addTo(mymap)
+				.bindPopup('London - UK <br> Easily customizable.')
+				.openPopup();
+				
+			var circle = L.circle([36.123, -115.175], {
+				color: 'red',
+				fillColor: '#f03',
+				fillOpacity: 0.5,
+				radius: 500
+				}).addTo(mymap);
+	
+			L.marker([36.115, -115.173]).addTo(mymap)
+				.bindPopup('Las Vegas, NV - USA<br> Easily customizable.')
+				.openPopup();
+				
+		</script>		
+		
+			
+			
+			
+		</div>
+	
+		<div class="subSect"></div>
+		<div class="sect sectTwo"></div>
+		<div class="subSect"></div>
+		<div class="sect sectThree">
+		
+		
+		
+		</div>
+		
+		
+		
+</body>
+
+</html>
