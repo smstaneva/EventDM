@@ -20,17 +20,18 @@
 			
 			*{margin:0;}                
 			
-			nav{background-color:rgba(0,0,0,.5);
+			nav{background-color:#000000;
 				width:100%;
-				position:fixed;
 				height:50px;
 				z-index:99;
-				text-align:center;}
+				text-align:center;
+				display: flex;}
 				
 			nav a{line-height:50px;    
 				color:white;
 				text-decoration:none;
-				margin:30px;}         
+				margin-left: auto;
+				margin-right: auto;}
 			
 			h1,h2{position:relative; 	 
 				font-style:italic;
@@ -120,6 +121,11 @@
 			<a href="networking">NETWORKING</a>
 			<a href="interesting_facts">INTERESTING FACTS</a>
 			<a href="contacts">CONTACTS</a>
+			<button id="hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</button>
 		</nav>		
 		
 		<div class="sect sectOne">
