@@ -7,6 +7,9 @@
 		<title> EDM2016 | Event Data Management </title>
 		<base href="https://smstaneva.github.io/EventDM/">
 		<link href="images/fav.ico" rel="shortcut icon" type="image/x-icon">
+		
+		<link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-car.css" />
+		<script src="http://github.hubspot.com/odometer/odometer.js"></script>
 
 		<style type="text/css"> 	
 		
@@ -24,14 +27,18 @@
 				width:100%;
 				height:50px;
 				z-index:99;
-				text-align:center;
 				display: flex;}
 				
-			nav a{line-height:50px;    
+			nav a{line-height:50px; 
+				padding:0;
 				color:white;
 				text-decoration:none;
+				text-align: center;
+				display: block;
 				margin-left: auto;
 				margin-right: auto;}
+			
+			nav a:hover{background-color: mistyrose;}
 			
 			h1,h2{position:relative; 	 
 				font-style:italic;
@@ -66,12 +73,17 @@
 				
 			button:hover{background-color:transparent;
 						background:transparent;}
-				
+			
+			
+
+			.odometer{font-size: 100px;
+						background-color:rgba(191,182,180,.5)}
+			
 			footer{width:100%;
 					margin-bottom:30px;        
 					text-align:center;}		
 			
-					.sect{height:100%;								
+					.sect{height:100%;
 						background-size:cover;
 						background-repeat: no-repeat;
 						background-attachment: fixed;}
@@ -107,26 +119,30 @@
 			@keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
 			
 		 </style>
+		 
+		 <script>
+			setTimeout(function(){
+			odometer.innerHTML = 30000;
+			}, 1000);
+
+		</script>
 				
 		<meta name="viewport" content="width=device-width,initial scale=1">
 	    	
     </head>
 
 	<body>
-
-		<nav>
-			<a href="schedule">SCHEDULE AT A GLANCE</a>
-			<a href="floorplan">FLOOR PLAN</a>
-			<a href="bangkok_hotels">BANGKOK HOTELS</a>
-			<a href="networking">NETWORKING</a>
-			<a href="interesting_facts">INTERESTING FACTS</a>
-			<a href="contacts">CONTACTS</a>
-			<button id="hamburger">
-				<div></div>
-				<div></div>
-				<div></div>
-			</button>
-		</nav>		
+		<header>
+			<nav>
+				<a href="schedule">SCHEDULE AT A GLANCE</a>
+				<a href="floorplan">FLOOR PLAN</a>
+				<a href="bangkok_hotels">BANGKOK HOTELS</a>
+				<a href="networking">NETWORKING</a>
+				<a href="interesting_facts">INTERESTING FACTS</a>
+				<a href="contacts">CONTACTS</a>
+			</nav>
+		</header>
+		
 		
 		<div class="sect sectOne">
 			
@@ -135,6 +151,7 @@
 			<button href="index.html">Learn More</button>
 			
 		</div>
+		
 		
 		<div class="sect subsection"> 
 			
@@ -149,6 +166,7 @@
 			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+			<div id="odometer" class="odometer">123</div>
 		</div>
 		<div class="sect sectTwo"></div>
 		<div class="sect subsection">
@@ -161,6 +179,8 @@
 		</div>
 		<div class="sect sectThree"></div>
 		
+	
+		<
 		<footer><a href="#FOOTER1">FOOTER1 </a> | <a href="#FOOTER2"> FOOTER2</a> | <a href="#FOOTER3">FOOTER3</a> | <a href="#FOOTER4">FOOTER4</a></footer>
 	</body>
  </html>
